@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+tab {
+	padding-left: 4em;
+}
+
+/*=============================BEGIN CSS=================================*/
+/*=============================Global=================================*/
+
+.active {
+
+}
+
+
+
+/*=============================Normal=================================*/
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar {
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 70px;
+  position: absolute;
+	z-index: 1;
+}
+
+.navbar ul {
+	position: absolute;
+	display: inline;
+	width: 600px;
+	left: 75px;
+	opacity: 1;
+	padding-left: 20px;
+	transition: .5s ease-in-out;
+	transform: rotateY(0deg);
+	transform-origin: 0% 0%;
+	backface-visibility: hidden;
+}
+
+.navbar ul li {
+  margin-right: 50px;
+  display: inline-block;
+  line-height: 60px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ececec;
+  transition: .5s ease;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background: url("http://i.imgur.com/E27N0DB.png");
+  float: left;
+  cursor: pointer;
+	opacity: 0.9;
+	transition: .3s ease-in-out;
+}
+
+.logo:hover {
+opacity: 1;
+}
+
+.navTriangle {
+	height: 0;
+	width: 0;
+	border-bottom: 6px transparent solid;
+	border-top: 6px transparent solid;
+	border-right: 6px transparent solid;
+	border-left: 6px #fff solid;
+	transition: .4s ease-in-out;
+	float: left;
+	margin-top: 24px;
+	margin-left: -5px;
+}
+
+.navTriangle.active {
+	transform: rotateY(180deg);
+  transform-origin: 25% 75%;
+}
+
+.navbarUL.active {
+	transform: rotateY(180deg);
+	transform-origin: 0% 0%;
+	opacity: 1;
+}
+
+.nav2 {
+	top: -80px;
+	position: fixed;
+	height: 60px;
+	background: #22313f;
+	width: 100%;
+	transition: .6s ease-in-out;
+	z-index: 6;
+}
+
+.nav2.visible {
+	top: 0;
+}
+
+.nav2Logo {
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	height: 50px;
+	width: 50px;
+	background: url("http://i.imgur.com/E27N0DB.png");
+	background-size: 50px 50px;
+}
+
+
+.nav2UL {
+	line-height: 55px;
+}
+
+.nav2UL li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.nav2UL li a {
+	text-decoration: none;
+	color: #ececec;
+	transition: .5s ease;
+}
+
+.nav2UL li a:hover {
+  color: #fff;
+}
+
+.jumboHeader {
+	position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+	bottom: 0;
+  height: 600px;
+  background: url("http://i.imgur.com/eOsLqeQ.png");
+	background-attachment: fixed;
+}
+
+.jumboContainer {
+	height: 600px;
+}
+
+.jumboContent {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 200px auto 0px auto;
+  text-align: center;
+}
+
+.jumboImage {
+  margin: 0 auto;
+  height: 215px;
+  width: 215px;
+  background:  url("http://i.imgur.com/udN8xZ6.png") no-repeat;
+}
+
+.jumboText {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.jumboTitle {
+  font-size: 36px;
+}
+
+.jumboSubText {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.mainContent {
+	background: #ececec;
+	height: 1800px;
+}
